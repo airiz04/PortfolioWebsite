@@ -47,7 +47,7 @@ html {
     box-sizing: border-box;
     border-bottom: 1px solid #AAABB8;
     background: #25274d;
-    height: 90vh;
+    height: 95vh;
 }
 
 .front-page .front-page-container {
@@ -61,7 +61,7 @@ html {
     width: 30%;
     max-width: 500px;
     height: 25%;
-    max-height: 400px;
+    max-height: 380px;
 }
 
 .front-page-container h1 {
@@ -100,7 +100,7 @@ html {
     padding: 10vh;
     border-bottom: 1px solid #AAABB8;
     background: #16172e;
-    height: 70vh;
+    height: auto;
     width: auto;
 }
 
@@ -146,7 +146,7 @@ html {
     justify-content: space-between;
     padding: 10px;
     background: #25274d;
-    min-height: 105vh;
+    min-height: 103vh;
     border-bottom: #AAABB8 1px solid;
 }
 
