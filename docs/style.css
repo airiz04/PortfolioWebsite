@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Mukta", sans-serif;
+}
+
+html {
+    background-color: #0d0838;
+}
+
+/* Navigation Bar */
+
+.nav-links {
+    display: flex;
+    font-size: 20px;
+    list-style: none;
+    background-color: #25274d;
+    padding: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 45px;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #2e9cca;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
+/* Front Page */
+
+.front-page {
+    padding-top: 4vh;
+    box-sizing: border-box;
+    border-bottom: 1px solid #AAABB8;
+    background: #25274d;
+    height: 90vh;
+}
+
+.front-page .front-page-container {
+    background: #464866;
+    padding: 50px;
+    width: max-content;
+    position: relative;
+    left: 60%;
+    top: 50%;
+    border-radius: 1rem;
+}
+
+.front-page-container h1 {
+    color: white;
+    font-size: 60px;
+}
+
+.front-page-container h2 {
+    color: #2e9cca;
+}
+
+.front-page-container h3 {
+    color: lightgray;
+    opacity: 0.4;
+}
+
+.front-page-container .icon-row{
+    position: absolute;
+    left: 78%;
+    bottom: 2%;
+}
+
+.icon-row .icon {
+    transition: 0.3s ease;
+}
+
+.icon:hover{
+    transform: scale(1.10);
+}
+
+/* About Section */
+
+.about-section {
+    display: flex;
+    padding-top: 10vh;
+    border-bottom: 1px solid #AAABB8;
+    background: #16172e;
+    height: 70vh;
+}
+
+.about-column {
+    flex: 50%
+}
+
+.about-me {
+    color: white;
+    background: #16172e;
+    font-size: 70px;
+    position: relative;
+    padding-left: 8vh;
+    padding-top: 4vh;
+}
+
+.about-description {
+    position: relative;
+    color: #AAABB8;
+    left: 10vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 700px;
+}
+
+.about-pic{
+    height: 500px;
+    width: 380px;
+    position: relative;
+    left: 30vh;
+    border-radius: 1rem;
+}
+
+/* Projects Section */
+
+.projects{
+    color: white;
+    background: #25274d;
+    font-size: 70px;
+    position: relative;
+    padding-left: 78%;
+    padding-top: 4vh;
+}
+
+.projects-section{
+    padding: 10px;
+    background: #25274d;
+    border-bottom: 1px solid #AAABB8;
+    min-height: 110vh;
+}
+
+.project-column1{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding-left: 15%;
+}
+
+.project-column2{
+    padding-left: 60%;
+    padding-bottom: 50px;
+    margin-top: -600px;
+    
+}
+
+.project-thumbnail{
+    max-width: 350px;
+    min-height: 200px;
+    border-radius: 1rem;
+}
+.project-container{
+    border: 1px solid #AAABB8;
+    border-radius: 1rem;
+    color: white;
+    background: #16172e;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+}
+
+.project-title{
+    font-size: 30px;
+    text-align: center;
+}
+
+.source{
+    background-color: #2e9cca;
+    color: white;
+    text-decoration: none;
+    padding: 7px 12px 7px 12px;
+    border-radius: 1rem;
+    margin: 15px;
+    transition: 0.3s ease;
+}
+
+.source:hover{
+    background-color: #29648A;
+}
+
+/* Skills Section */
+
+.skills{
+    color: white;
+    background: #16172e;
+    font-size: 70px;
+    position: relative;
+    padding-left: 8vh;
+    padding-top: 4vh;
+}
+
+.skills-section{
+    display: flex;
+    padding-top: 10vh;
+    border-bottom: 1px solid #AAABB8;
+    background: #16172e;
+    height: 60vh;
+}
+
+.skills-containers-row{
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    height: 350px;
+    padding-left: 52px;
+}
+
+.skill-container{
+    background: #25274d;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    justify-content: center;
+    border-radius: 1rem;
+    border: 1px solid #AAABB8;
+}
+
+.skill-container h1{
+    color: white;
+    text-align: center;
+    position: relative;
+    bottom: 20%;
+}
+
+.scrollable-row{
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+    height: 100px;
+}
+
+@keyframes scrollLeft{
+    to{
+        left: -200px;
+    }
+}
+
+.scroll-item{
+    left: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-name: scrollLeft;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    padding: 10px;
+    color: #29648a;
+}
+
+.item1{
+    animation-delay: calc(10s / 3 * (3 - 1) * -1);
+}
+
+.item2{
+    animation-delay: calc(10s / 3 * (3 - 2) * -1);
+}
+
+.item3{
+    animation-delay: calc(10s / 3 * (3 - 3) * -1);
+}
+
+.iitem1{
+    animation-delay: calc(10s / 4 * (4 - 1) * -1);
+}
+
+.iitem2{
+    animation-delay: calc(10s / 4 * (4 - 2) * -1);
+}
+
+.iitem3{
+    animation-delay: calc(10s / 4 * (4 - 3) * -1);
+}
+
+.iitem4{
+    animation-delay: calc(10s / 4 * (4 - 4) * -1);
+}
+
+.scroll-item img{
+    width: 50px;
+    height: 50px;
+}
+
+/* Contact Section */
+
+.contact-me{
+    color: white;
+    background: #25274d;
+    font-size: 70px;
+    position: relative;
+    text-align: center;
+    padding: 20px 20px 50px 20px;
+}
+
+.contact-me-section{
+    min-height: 45vh;
+    background: #25274d;
+    border-bottom: 1px solid #AAABB8;
+}
+
+.contact-section-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+}
+
+.left-contact-section{
+    color: white;
+    max-width: 30%;
+    border: 1px solid #AAABB8;
+    border-radius: 1rem;
+    padding: 30px;
+    background: #16172e;
+}
+
+.left-contact-section h1{
+    text-align: center;
+}
+
+.left-contact-section h2{
+    color: lightgray;
+}
+
+.right-contact-section{
+    display: flex;
+    color: white;
+    min-width: 30%;
+    gap: 0.5rem;
+}
+
+
+.right-contact-section h2{
+    padding-top: 5px;
+}
+
+.right-contact-section h2 a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Put email icon and other icons to left of text, and use mailto::*/
+
+/* Footer Section */
+
+footer{
+    background-color: #16172e;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer h2{
+    color: white;
+    text-align: center;
+}
+
+footer h3{
+    color: lightgray;
+    text-align: center;
+}
+
+footer h3 a{
+    color: #2e9cca;
+}
+
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+    transform: translateX(-100%);
+}
+
+.hidden-right{
+    opacity: 0;
+    transition: all 1s;
+    transform: translateX(100%);
+}
+
+@media (prefers-reduced-motion) {
+    .hidden{
+        transition: none;
+    }
+
+    .hidden-right{
+        transition: none;
+    }
+}
+
+.show{
+    opacity: 1;
+    transform: translateX(0);
+}
