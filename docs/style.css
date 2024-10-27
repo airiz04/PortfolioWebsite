@@ -7,10 +7,14 @@
 
 body {
     font-family: "Mukta", sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 html {
     background-color: #0d0838;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 /* Navigation Bar */
@@ -51,9 +55,13 @@ html {
     padding: 50px;
     width: max-content;
     position: relative;
-    left: 60%;
+    margin-left: 60%;
     top: 50%;
     border-radius: 1rem;
+    width: 30%;
+    max-width: 500px;
+    height: 25%;
+    max-height: 400px;
 }
 
 .front-page-container h1 {
@@ -88,14 +96,16 @@ html {
 
 .about-section {
     display: flex;
-    padding-top: 10vh;
+    justify-content: space-around;
+    padding: 10vh;
     border-bottom: 1px solid #AAABB8;
     background: #16172e;
     height: 70vh;
+    width: auto;
 }
 
 .about-column {
-    flex: 50%
+    display: flex;
 }
 
 .about-me {
@@ -108,9 +118,7 @@ html {
 }
 
 .about-description {
-    position: relative;
     color: #AAABB8;
-    left: 10vh;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -120,8 +128,6 @@ html {
 .about-pic{
     height: 500px;
     width: 380px;
-    position: relative;
-    left: 30vh;
     border-radius: 1rem;
 }
 
@@ -131,33 +137,36 @@ html {
     color: white;
     background: #25274d;
     font-size: 70px;
-    position: relative;
-    padding-left: 78%;
-    padding-top: 4vh;
+    padding: 4vh 8vw 0 0;
+    text-align: right;
 }
 
 .projects-section{
+    display: flex;
+    justify-content: space-between;
     padding: 10px;
     background: #25274d;
-    border-bottom: 1px solid #AAABB8;
-    min-height: 110vh;
+    min-height: 105vh;
+    border-bottom: #AAABB8 1px solid;
 }
 
 .project-column1{
     display: flex;
     flex-direction: column;
     gap: 5rem;
-    padding-left: 15%;
+    padding-left: 20%;
 }
 
 .project-column2{
-    padding-left: 60%;
-    padding-bottom: 50px;
-    margin-top: -600px;
-    
+    display: flex;
+    flex-direction: column;
+    padding-right: 20%;
+    padding-top: 15%;
 }
 
 .project-thumbnail{
+    width: 90%;
+    height: 50%;
     max-width: 350px;
     min-height: 200px;
     border-radius: 1rem;
@@ -172,6 +181,7 @@ html {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    width: 100%;
     max-width: 400px;
 }
 
@@ -216,16 +226,19 @@ html {
 .skills-containers-row{
     display: flex;
     flex-direction: row;
-    gap: 10rem;
-    height: 350px;
-    padding-left: 52px;
+    gap: 6rem;
+    height: 100%;
+    max-height: 350px;
+    justify-content: space-around;
+    width: 100%;
 }
 
 .skill-container{
     background: #25274d;
     display: flex;
     flex-direction: column;
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     justify-content: center;
     border-radius: 1rem;
     border: 1px solid #AAABB8;
@@ -308,7 +321,6 @@ html {
     color: white;
     background: #25274d;
     font-size: 70px;
-    position: relative;
     text-align: center;
     padding: 20px 20px 50px 20px;
 }
@@ -324,12 +336,12 @@ html {
     justify-content: center;
     align-items: center;
     gap: 3rem;
-
 }
 
 .left-contact-section{
     color: white;
-    max-width: 30%;
+    width: 30%;
+    max-width: 500px;
     border: 1px solid #AAABB8;
     border-radius: 1rem;
     padding: 30px;
